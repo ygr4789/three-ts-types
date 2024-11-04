@@ -2,31 +2,26 @@
     "private": true,
     "license": "MIT",
     "scripts": {
-        "prepare": "husky install",
         "test-all": "node --require source-map-support/register node_modules/@definitelytyped/dtslint-runner/ --path .",
         "test": "node --require source-map-support/register node_modules/@definitelytyped/dtslint/ types/three",
         "lint": "node --require source-map-support/register node_modules/@definitelytyped/dtslint/ types/three",
-        "prettier:write": "prettier --write .",
-        "prettier:check": "prettier --check .",
-        "contributors:add": "all-contributors add"
+        "format": "dprint fmt",
+        "format-check": "dprint check"
     },
     "devDependencies": {
         "@definitelytyped/definitions-parser": "latest",
+        "@definitelytyped/dts-critic": "latest",
         "@definitelytyped/dtslint": "latest",
         "@definitelytyped/dtslint-runner": "latest",
+        "@definitelytyped/eslint-plugin": "latest",
         "@definitelytyped/header-parser": "latest",
+        "@definitelytyped/typescript-versions": "latest",
         "@definitelytyped/utils": "latest",
-        "@tweenjs/tween.js": "~18.6.4",
         "@types/stats.js": "*",
         "@types/webxr": "*",
-        "all-contributors-cli": "^6.26.0",
-        "fflate": "~0.6.9",
-        "husky": "^8.0.3",
-        "lil-gui": "~0.17.0",
-        "prettier": "2.8.8",
-        "pretty-quick": "^3.1.3",
+        "dprint": "^0.47.4",
         "source-map-support": "^0.5.21",
-        "typescript": "next"
+        "typescript": "latest"
     },
-    "packageManager": "yarn@3.5.1"
+    "packageManager": "pnpm@9.12.2"
 }

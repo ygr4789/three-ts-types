@@ -21,7 +21,7 @@
             "enabled": false
         },
         {
-            "matchPackageNames": ["lil-gui"],
+            "matchPackageNames": ["meshoptimizer"],
             "matchUpdateTypes": ["major", "minor"],
             "enabled": false
         }
